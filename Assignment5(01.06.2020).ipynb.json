@@ -1,0 +1,67 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# CSE-221710309048-PRANAVBABU"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "welcome to the password generator!\n",
+      "your new passowrd is:awakegoat88[\n"
+     ]
+    }
+   ],
+   "source": [
+    "import random#helps to make random choice\n",
+    "import string#helps to perform all string related tasks\n",
+    "adjectives=['red','dead','awake','hollow','shadow','redemption','black','harambe','viloet','pink','bully','bull','shark','proud','brave']\n",
+    "nouns=['warrior','dinosuar','bat','dragon','goat','hammer','eagle','pin']\n",
+    "print(\"welcome to the password generator!\")\n",
+    "adjective=random.choice(adjectives)\n",
+    "noun=random.choice(nouns)\n",
+    "number=random.randrange(0,100)#used to select random number from 0 to 100\n",
+    "special_char=random.choice(string.punctuation)\n",
+    "password=adjective+noun+str(number)+special_char#combination all above created things and password is hard to crack\n",
+    "print(\"your new passowrd is:%s\" % password)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
